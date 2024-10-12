@@ -1,0 +1,42 @@
+.button-container {
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5rem;
+	padding: 0;
+	margin: 0;
+}
+
+.button-container button {
+	min-width: 150px;
+	width: 20%;
+	background-color: transparent;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.button-container button:hover {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.array-container {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 2px;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: calc(100vh - 5rem);
+}
+
+.array-bar {
+	width: 5px;
+	background-color: #c4d6b0;
+}
+
+@media only screen and (max-width: 860px) {
+	.button-container button {
+		min-width: 0;
+	}
+}

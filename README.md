@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Sorting Algorithms Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a visual representation of various sorting algorithms built using **React.js**. It allows users to see how different sorting algorithms work by visualizing the process step by step.
+
+## Features
+
+- **Visual Representation**: Animations to show how arrays are sorted by different algorithms.
+- **Sorting Algorithms Available**:
+  - Merge Sort
+  - Quick Sort
+  - Heap Sort
+  - Insertion Sort
+  - Bubble Sort
+
+## Getting Started
+
+### Prerequisites
+
+To run this project locally, you will need:
+
+- **Node.js**: Make sure Node.js is installed on your system. You can download it [here](https://nodejs.org/).
+- **npm**: Installed with Node.js. Alternatively, you can use `yarn` if you prefer.
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Abhinandan-git/sorting-visualizer.git
+   cd sorting-visualizer
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
+
+   The app will run in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
+
+### Build
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+This will build the app for production and output the files to the `build` folder.
+
+## How to Use
+
+1. **Select a Sorting Algorithm**: You can choose between Merge Sort, Quick Sort, Heap Sort, Insertion Sort, and Bubble Sort.
+2. **Start Sorting**: Click on the "Sort" button to start the visual representation of the selected algorithm.
+3. **Reset**: You can reset the array at any time by clicking the "Generate New Array" button.
+
+## Project Structure
+
+```bash
+.
+├── public
+│   └── index.html
+├── src
+│   ├── sortingAlgorithms  # Sorting algorithms implementation
+│   ├── SortingVisualizer  # React components
+│   ├── App.js             # Main application component
+│   ├── index.js           # Entry point of the app
+│   └── styles.css         # CSS styles
+└── README.md
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start`: Runs the app in development mode.
+- `npm run build`: Builds the app for production.
+- `npm test`: Launches the test runner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sorting Algorithms
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Merge Sort**: A divide-and-conquer algorithm that splits the array into smaller subarrays and then merges them back in sorted order.
+- **Quick Sort**: Another divide-and-conquer algorithm that picks a pivot and partitions the array into two halves, sorting them recursively.
+- **Heap Sort**: Utilizes a binary heap to sort elements. It first builds a max heap and then repeatedly swaps the root with the last element, reducing the heap size.
+- **Insertion Sort**: Builds the sorted array one item at a time, inserting each element into its correct position.
+- **Bubble Sort**: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js**: A JavaScript library for building user interfaces.
+- **CSS**: For styling the UI and animations.
+- **JavaScript**: Core language for implementing the sorting algorithms.
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Abhinandan-git/sorting-visualizer/issues) if you want to contribute.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
